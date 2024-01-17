@@ -10,13 +10,13 @@ var groupAnagrams = function(strs) {
     for(let i of strs) {
         let key = i.split('').sort().join('')
 
-        if(ojb[key]) {
+        if(obj[key]) {
             obj[key].push(i)            
         }
         else {
             obj[key] = [i]
         }
     }
-    return(Object.values(obj))
+    return Object.values(obj)
     
 };
